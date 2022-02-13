@@ -35,7 +35,7 @@ export const buildStyles = () => {
 
 export const scripts = () => {
      return gulp.src([
-     // 'node_modules/jquery/dist/jquery.js',
+      'node_modules/jquery/dist/jquery.js',
       'app/js/main.js'
    ])
       .pipe(concat('main.min.js'))

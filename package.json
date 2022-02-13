@@ -26,5 +26,8 @@
     "gulp-uglify-es": "^3.0.0",
     "normalize-scss": "^7.0.1",
     "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

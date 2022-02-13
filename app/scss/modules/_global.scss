@@ -1,7 +1,68 @@
+$font-main: "Poppins";
+$max-width: 1440;
+
 *, 
 *::before, 
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: $font-main;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@mixin responsive-font($pc-size, $mob-size) {
+  $add-size: $pc-size - $mob-size;
+  $max-width: $max-width - 320;
+  font-size: calc(#{$mob-size + px} + #{$add-size} * ((100vw - 320px) / #{$max-width}));
+}
+
+.page__body {
+  max-width: #{$max-width + px};
+  margin: 0 auto;
+}
+.container {
+  max-width: 1110px;
+  padding: 0 10px;
+  margin: 0 155px;
+}
+@media screen and (max-width: 1020px) {
+  .container {
+    margin: 0 10px;
+  }
+}
+
+.content {
+  max-width: 560px;
+  &__header {
+    @include responsive-font(14, 16);
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+  &__title {
+    margin-top: 22px;
+    font-weight: bold;
+    @include responsive-font(60, 30);
+    line-height: 74px;
+    color: #FFFFFF;
+    @media screen and (max-width: 720px) {
+      line-height: 60px;
+    }
+  }
+  &__description {
+    margin-top: 10px;
+    font-weight: normal;
+    @include responsive-font(16, 14);
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+  }
+  &__text-link {
+    @include responsive-font(16, 14);
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #FFD723;
+  }
 }
