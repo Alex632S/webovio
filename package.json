@@ -1,0 +1,30 @@
+{
+  "name": "gulp-start",
+  "version": "1.0.0",
+  "description": "start project",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build:dev": "gulp buildDist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/register": "^7.16.0",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.43.4"
+  }
+}
