@@ -28,7 +28,7 @@
 .content-header {
     margin-top: 15vh;
     @media screen and (max-width: 1020px) {
-        margin-top: 50vh;
+        margin-top: calc(121 / 900 * 100vh);
         text-align: center;
         margin: 20vh auto;
     }
