@@ -1,9 +1,11 @@
 .sevices {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     @media screen and (max-width: 1170px) {
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
     }
 }
 
@@ -53,6 +55,11 @@
 .badge {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     &-image {
         max-width: 90px;
     }
@@ -61,6 +68,9 @@
     }
     &-description {
         margin-left: 30px;
+        @media screen and (max-width: 500px) {
+            margin-left: 0;
+        }
     }
     &-description__title {
         font-weight: bold;

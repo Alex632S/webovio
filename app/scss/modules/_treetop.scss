@@ -1,0 +1,29 @@
+.treetop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+    padding-top: 162px;
+    border-top: 1px solid rgba(33, 56, 66, 0.0955529);
+    @media screen and (max-width: 1170px) {
+        flex-direction: column;
+        text-align: center;
+    }
+    .treetop__title {
+        max-width: 325px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 54px;
+        color: #4D533C;
+        @media screen and (max-width: 1170px) {
+            margin-bottom: 25px;
+        }
+    }
+    .treetop__description {
+        max-width: 463px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(33, 56, 66, 0.6);
+    }
+}
