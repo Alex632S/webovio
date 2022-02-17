@@ -9,6 +9,9 @@
         @include responsive-font(36, 26);
         line-height: 46px;
         color: #4D533C;
+        @media screen and (max-width: 1020px) {
+            text-align: center;
+        }
     }
     &-list {
         margin-top: 60px;
@@ -51,5 +54,41 @@
         line-height: 18px;
         text-decoration-line: underline;
         color: #FFD723;
+    }
+}
+
+.categories-banner-wrap {
+    display: inline-block;
+    background: #FAFAFA;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+    transform: translateY(50%);
+    @media screen and (max-width: 1020px) {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+}
+.categories-banner {
+    padding: 70px 290px 70px 165px;
+    @media screen and (max-width: 1020px) {
+        padding: 70px 10px 70px 10px;
+        text-align: center;
+    }
+    &__title {
+        @include responsive-font(60, 38);
+        max-width: 700px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        line-height: 74px;
+        color: #4D533C;
+    }
+    &__inner {
+        @include responsive-font(16, 14);
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #D4D6D4;
     }
 }
