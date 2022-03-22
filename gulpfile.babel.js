@@ -23,7 +23,9 @@ export const cleanDist = () => {
 
 export const buildStyles = () => {
     return gulp.src('app/scss/style.scss')
-      .pipe(sass({ outputStyle: 'compressed' }))
+      .pipe(sass({ 
+         includePaths:'./node_modules', 
+         outputStyle: 'compressed' }))
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({
          overrideBrowserslist: ['last 10 version'],

@@ -34,16 +34,16 @@
         .object-card-min {
             display: inline-block;
             padding: 30px;
-            background-color: #fff;
-            box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+            background-color: $color-white;
+            box-shadow: 50px 50px 100px $color-shadow;
             border-radius: 8px;
             transform: translate(35px, 65px);
             @media screen and (max-width: 1170px) {
                 transform: translate(0px, -75px);
-                box-shadow: -50px -50px 100px rgba(0, 0, 0, 0.145947);
+                box-shadow: -50px -50px 100px $color-shadow;
             }
             @media screen and (max-width: 500px) {
-                box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+                box-shadow: 50px 50px 100px $color-shadow;
             }
         }
         .card__description {
@@ -53,7 +53,7 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 26px;
-            color: #4D533C;
+            color: $color-olive;
         }
         .badge-image {
             width: 46px;
@@ -76,7 +76,7 @@
             font-weight: bold;
             @include responsive-font(36, 26);
             line-height: 48px;
-            color: #4D533C;
+            color: $color-olive;
             @media screen and (max-width: 1170px) {
                 margin-left: auto;
                 margin-right: auto;
@@ -87,14 +87,14 @@
             font-weight: normal;
             @include responsive-font(16, 14);
             line-height: 26px;
-            color: rgba(33, 56, 66, 0.6);
+            color: $color-dark;
         }
         .content__description-margin {
             margin-bottom: 32px;
         }
     }
     .content__text-link {
-        color: #D4D6D4;
+        color: $color-light;
     }
 }
 
@@ -115,10 +115,10 @@
             transform: translate(-35px, 65px);
             @media screen and (max-width: 1170px) {
                 transform: translate(0px, -75px);
-                box-shadow: -50px -50px 100px rgba(0, 0, 0, 0.145947);
+                box-shadow: -50px -50px 100px $color-shadow;
             }
             @media screen and (max-width: 500px) {
-                box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+                box-shadow: 50px 50px 100px $color-shadow;
             }
         }
         @media screen and (max-width: 1170px) {

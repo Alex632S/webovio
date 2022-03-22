@@ -1,13 +1,10 @@
-$font-main: "Poppins";
-$max-width: 1440;
-
 *, 
 *::before, 
 *::after {
+  font-family: $font-main;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: $font-main;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -42,33 +39,37 @@ a {
 
 .content {
   max-width: 560px;
+
   &__header {
     @include responsive-font(14, 16);
     line-height: 21px;
-    color: #FFFFFF;
+    color: $color-white;
   }
+
   &__title {
     margin-top: 22px;
     font-weight: bold;
     @include responsive-font(60, 30);
     line-height: 74px;
-    color: #FFFFFF;
+    color: $color-white;
     @media screen and (max-width: 720px) {
       line-height: 60px;
     }
   }
+
   &__description {
     margin-top: 10px;
     font-weight: normal;
     @include responsive-font(16, 14);
     line-height: 26px;
-    color: #FFFFFF;
+    color: $color-white;
     margin-bottom: 45px;
   }
+  
   &__text-link {
     @include responsive-font(16, 14);
     line-height: 18px;
     text-decoration-line: underline;
-    color: #FFD723;
+    color: $color-yellow;
   }
 }

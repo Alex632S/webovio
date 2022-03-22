@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center center;
 }
+
 .menu-icon-link {
     &__image-min{
         display: none;
@@ -13,11 +14,13 @@
         &__image{
             display: none;
         }
+        
         &__image-min{
             display: inline-block;
         }
     }
 }
+
 .menu-header {
     padding-top: 24px;
     display: flex;
@@ -33,7 +36,6 @@
         margin: 20vh auto;
     }
 }
-
 
 .menu-burger {
     width: 40px;

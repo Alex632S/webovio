@@ -1,12 +1,13 @@
 .footer {
     padding-top: 254px;
     width: 100%;
-    background-color: #50583B;
+    background-color: $color-olive-bg;
     @media screen and (max-width: 720px) {
         .footer-displey {
             display: none;
         }
     }
+    
     &-content {
         margin-top: 60px;
         display: flex;
@@ -19,42 +20,47 @@
             justify-content: center;
         }
     }
+
     @media screen and (max-width: 720px) {
         &-list {
             text-align: center;
         }
     }
 
-    &-list__title {
-        font-weight: 600;
+    &-list__title,
+    &-list__link,
+    &-list__description {
         font-size: 16px;
         line-height: 38px;
-        text-transform: uppercase;
-        color: #FFFFFF;
     }
+
+    &-list__title {
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
     &-list__link {
         font-weight: bold;
-        font-size: 16px;
-        line-height: 40px;
-        color: #FFFFFF;
+        color: $color-white;
     }
+
     &-list__description {
         font-weight: normal;
-        font-size: 16px;
-        line-height: 40px;
-        color: #B6C197;
+        color: $color-grey-light;
     }
 }
+
 .last-link {
     font-weight: bold;
     @include responsive-font(24, 18);
     line-height: 38px;
-    color: #FFFFFF;
+    color: $color-white;
 }
 
 .footer-list-icons {
-    padding-top: 24px;
     width: 172px;
+    padding-top: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,10 +69,10 @@
     }
 
     &-item {
-        padding-top: 5.5px;
         width: 33px;
         height: 33px;
-        background: rgba(196, 196, 196, 0.2);
+        padding-top: 5.5px;
+        background: $color-light-dark;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -76,7 +82,7 @@
 
 .footer-bottom {
     padding: 24px 0;
-    border-top: 1px solid #5D6544;
+    border-top: 1px solid $color-olive-light;
     @media screen and (max-width: 720px) {
         flex-direction: column;
     }
@@ -87,6 +93,6 @@
         }
         font-size: 14px;
         line-height: 21px;
-        color: #B5C096;
+        color: $color-light-grey;
     }
 }
