@@ -77,6 +77,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        translate: all .3s;
+    }
+    &-item:hover {
+        background: $color-yellow;
     }
 }
 

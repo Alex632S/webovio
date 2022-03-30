@@ -78,6 +78,7 @@
 
 .categories-banner {
     padding: 70px 290px 70px 165px;
+    transition: all .8s ease .4s;
     @media screen and (max-width: 1020px) {
         padding: 70px 10px 70px 10px;
         text-align: center;

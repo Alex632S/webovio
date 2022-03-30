@@ -42,3 +42,10 @@
     height: 40px;
     cursor: pointer;
 }
+
+.content__title {
+    transition: all .8s ease .4s;
+}
+.content__description {
+    transition: all .8s ease .7s;
+}
