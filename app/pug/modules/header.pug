@@ -1,15 +1,30 @@
 header.header.header-size
     .container
-        .menu-header
+        .menu-header.num1
             a.menu-header__link(href="#")
                 .menu-icon-link 
-                    img.menu-icon-link__image(src="./images/header/SVG/logo-02.svg", alt="logo")
-                    img.menu-icon-link__image.menu-icon-link__image-min(src="./images/header/SVG/logo-01.svg", alt="logo")
+                    img.menu-icon-link__image(src="./images/header/SVG/logo-02.svg" alt="logo")
+                    img.menu-icon-link__image.menu-icon-link__image-min(src="./images/header/SVG/logo-01.svg" alt="logo")
             .menu-burger 
-                img(src="./images/header/SVG/burger.svg", alt="burger")
+                img.menu-burger__burger(src="./images/header/SVG/burger.svg" alt="burger")
+                img.menu-burger__exit(src="./images/header/SVG/exit.svg" alt="exit")
         .content.content-header
             h4.content__header._anim-items A place where
             h1.content__title._anim-items A creative agency for redemptive brands
             p.content__description._anim-items Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.
             a.content__link(href="#")
                 span.content__text-link Get in touch 
+    .menu-drop 
+        ul.menu-drop-list
+            li.menu-drop-item 
+                a.menu-drop-list__link(href="#about")
+                    span.menu-drop-list__description About
+            li.menu-drop-item 
+                a.menu-drop-list__link(href="#blog")
+                    span.menu-drop-list__description Blog
+            li.menu-drop-item 
+                a.menu-drop-list__link(href="#contact")
+                    span.menu-drop-list__description Contact
+            li.menu-drop-item 
+                a.menu-drop-list__link(href="#jobs")
+                    span.menu-drop-list__description Jobs            
