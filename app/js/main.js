@@ -19,35 +19,6 @@ function slide() {
 $(window).resize(slide);
 $(document).ready(slide);
   
-  
-$(document).bind('mousewheel DOMMouseScroll', function(event) {
-    scroll(event);
-});
-
-if (intFrameWidth >= 1200) {
-    let num = 1;
-    let scrolling = false;
-    
-    function scroll(event) {
-        event.preventDefault();
-        if (!scrolling) {
-            scrolling = true;
-            if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-                num--;
-                num = num < 1 ? 1 : num;
-            } else {
-                num++;
-                num = num > 10 ? 10 : num;
-            }
-           
-            $('html, body').animate({
-                scrollTop: $(".num" + num).offset().top
-            }, 500, "linear", function() {
-                scrolling = false;
-            });
-        }
-    }
-}
 
 let animItems = document.querySelectorAll('._anim-items');
 
