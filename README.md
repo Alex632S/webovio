@@ -2,7 +2,9 @@
 A creative agency for redemptive brands. Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.
 This Landing page features a drop-down navigation menu and minimalist animation.
 
-![html5](https://img.shields.io/badge/-html5-282a36?style=for-the-badge&logo=html5&logoColor=)
+<br>![pug_hierarchy](app/images/readme/preview.png)
+
+<br>![html5](https://img.shields.io/badge/-html5-282a36?style=for-the-badge&logo=html5&logoColor=)
 ![pug](https://img.shields.io/badge/-Pug-282a36?style=for-the-badge&logo=Pug&logoColor=)
 ![css3](https://img.shields.io/badge/-css3-282a36?style=for-the-badge&logo=css3&logoColor=blue)
 ![scss](https://img.shields.io/badge/-scss-282a36?style=for-the-badge&logo=sass&logoColor=)
